@@ -3,10 +3,12 @@ package guru.springframework.api.services;
 import guru.springframework.api.domain.Employee;
 import guru.springframework.api.domain.EmployeeResponse;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.List;
 
+@Service
 public class EmployeeServiceImpl implements EmployeeService {
 
     private final RestTemplate restTemplate;

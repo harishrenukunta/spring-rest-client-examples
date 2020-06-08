@@ -16,7 +16,7 @@ import static org.assertj.core.api.Assertions.tuple;
 import static org.assertj.core.api.AssertionsForInterfaceTypes.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
 
-@SpringBootTest(classes={TestConfig.class})
+@SpringBootTest
 class CustomerServiceImplTest {
 
     @Autowired

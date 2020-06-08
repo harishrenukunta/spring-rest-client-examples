@@ -23,15 +23,15 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
 
 
-@SpringBootTest(classes={TestConfig.class})
+@SpringBootTest
 public class EmployeeServiceImplTest {
 
     @Autowired
-    EmployeeService empService;
+    EmployeeService employeeService;
 
     @Test
     void getEmployees() {
-        final List<Employee> listOfEmployees = empService.getEmployees();
+        final List<Employee> listOfEmployees = employeeService.getEmployees();
         assertThat(listOfEmployees).as("Check employees are returned").hasSizeGreaterThan(5);
     }
 }
